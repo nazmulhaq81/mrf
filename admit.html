@@ -324,7 +324,7 @@ Object.keys(OVERRIDES).forEach(c => {
   Object.keys(OVERRIDES[c]).forEach(y => { COURSES[c][y] = OVERRIDES[c][y]; });
 });
 let LISTS = JSON.parse(localStorage.getItem('mrfnc_lists') || 'null') || {
-  dates: ["03.10.2026","04.10.2026","05.10.2026","06.10.2026","07.10.2026","08.10.2026","10.10.2026","11.10.2026","12.10.2026","13.10.2026","14.10.2026","17.10.2026"],
+  dates: ["28.10.2026","29.10.2026","31.10.2026","01.11.2026","02.11.2026","08.10.2026","10.10.2026","11.10.2026","12.10.2026","13.10.2026","14.10.2026","17.10.2026"],
   times: ["10AM-1PM","2PM-5PM"]
 };
 let rows = [];
@@ -376,7 +376,7 @@ function onCourseChange(){
 function onYearChange(){
   const course = document.getElementById('selCourse').value;
   const year = document.getElementById('selYear').value;
-  document.getElementById('fExam').value = `${year} Test Examination-2026`;
+  document.getElementById('fExam').value = `${year} Test Supplementary Examination-2026`;
   renderSubjectChecklist();
   syncPreview();
 }
